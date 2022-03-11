@@ -131,6 +131,11 @@ searchBtn.addEventListener("click" , () =>{
     sidebar.classList.remove("close");
 })
 
+if (window.matchMedia && 
+    window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.toggle("dark");
+}
+
 modeSwitch.addEventListener("click" , () =>{
     body.classList.toggle("dark");
     
