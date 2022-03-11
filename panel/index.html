@@ -125,12 +125,16 @@
       searchBtn = body.querySelector(".search-box"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
-
-
+      home = body.querySelector("#home"),
+      
 toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
 })
 
+home.addEventListener("click" , () =>{
+    window.location.replace("http://zodiussweb.github.io/panel/home");
+})     
+      
 searchBtn.addEventListener("click" , () =>{
     sidebar.classList.remove("close");
 })
