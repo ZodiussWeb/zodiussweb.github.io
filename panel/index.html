@@ -130,7 +130,17 @@
       modeText = body.querySelector(".mode-text"),
       home = body.querySelector(".home-switch");
       
+  if (window.location.protocol === 'https:') {
+    if (href === "home") {
+        alert("Accessing Gma");
+    }
+}   
       
+if (window.location.protocol === 'https:') {
+    if (href === "chatroom") {
+        sidebar.classList.toggle("close");
+    }
+}
       
 toggle.addEventListener("click" , () =>{
     sidebar.classList.toggle("close");
